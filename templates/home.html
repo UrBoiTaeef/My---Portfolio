@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <!-- Opening page of an webpage  -->
+<head>
+<title> Taeef Memon</title>
+  <style>
+    /* Making image and text align together */
+    .about-container {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Creates space between elements */
+      border: 2px solid #000; /* Add a solid black border */
+      padding: 20px; /* Adds space inside the border */
+      margin: 20px 0; /* Adds space around the entire section */
+      border-radius: 10px; /* Adds rounded corners */
+      background-color: #f9f9f9; /* Adds a light background color */
+    }
+    .about-container img {
+        margin-left: 20px; /* Adds some space between text and image */
+        height: 200px;
+    }
+    .about-container .about-text {
+        flex: 1; /* Takes up available space */
+        margin-right: 20px;
+    }
+/* Adding margin to hold page */
+    #container{
+      max-width: 720px;
+      margin: 0 auto 0 auto;
+    }
+    /*Adding style for h1 tag*/
+    h1{
+      font-size: 40px;
+      font-family: fantasy;
+      font-weight: normal;
+      color: rgb(0,0,0);
+      text-align: center;
+    }
+    #banner{
+      width: 30%;
+      height: 260px;
+    }
+
+    h2{
+    font-family: Roboto;
+    }
+  </style>
+</head>
+
+
+
+
+
+  
+  <body>
+    <div id = "container">
+    <h1>My Portfolio</h1>
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About me</h2>
+            <p>Hello, I am Taeef. I am a student at Vellore Institute of Technology. I am studying Electronics and Communication and making this project to learn about web development using Flask, and exploring how to deploy my Python projects and make them available for the world to test.</p>
+        </div>
+        <img src="{{ url_for('static', filename='taeefhere_gmail.com_photograph-copy.jpeg') }}" alt="Taeef's photo">
+    </div>
+    <h2>My Projects</h2>
+    <h3>Project 1(Want to add git hub link also)</h3>
+    <p>About Project 1</p>
+    <p> demo of project 1 -- link</p>
+    <h3>Project 2(Want to add git hub link also)</h3>
+    <p>About Project 2</p>
+    <p> demo of project 2 -- link</p>
+    <h3>Project 3(Want to add git hub link also)</h3>
+    <p>About Project 3</p>
+    <p> demo of project 3 -- link</p>
+
+    <button>Contact Information</button>
+    
+      </div>
+    
+  </body>
+
+  
+</html>
